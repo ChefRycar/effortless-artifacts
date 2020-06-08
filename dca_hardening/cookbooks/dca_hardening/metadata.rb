@@ -1,0 +1,11 @@
+name 'dca_hardening'
+maintainer 'Chef Demoers'
+maintainer_email 'demos@chef.io'
+license 'All Rights Reserved'
+description 'Installs/Configures dca_hardening'
+long_description 'Installs/Configures dca_hardening'
+version '0.1.0'
+chef_version '>= 14.0'
+
+depends 'os-hardening'
+depends 'windows-hardening'

@@ -1,0 +1,5 @@
+#!/bin/bash
+if ! knife ssl check {{cfg.automate.server_url}} -c {{pkg.svc_config_path}}/client-config.rb ;
+then
+  knife ssl fetch {{cfg.automate.server_url}} -c {{pkg.svc_config_path}}/client-config.rb
+fi
